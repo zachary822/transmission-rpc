@@ -1,0 +1,2 @@
+class TransmissionError(Exception):
+    pass

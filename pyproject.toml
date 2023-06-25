@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "transmission-rpc"
+version = "0.1.0"
+description = ""
+authors = ["Zachary Juang <zachary822@me.com>"]
+readme = "README.md"
+packages = [{include = "transmission_rpc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tenacity = "^8.2.2"
+requests = "^2.31.0"
+pydantic = "^1.10.9"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
